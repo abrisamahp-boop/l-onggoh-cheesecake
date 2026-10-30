@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Onggoh Cheesecake — Ulasan Pelanggan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#FAF7F2] text-[#2C221E] font-sans antialiased">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 bg-[#FAF7F2]/90 backdrop-blur-md border-b border-[#EFE5D8]">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="font-serif text-2xl font-bold tracking-tight text-[#2C221E]">L'Onggoh<span class="text-[#D97736]">.</span></a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-[#6B5B52]">
+        <a href="index.html" class="hover:text-[#D97736] transition">Beranda</a>
+        <a href="menu.html" class="hover:text-[#D97736] transition">Menu Pilihan</a>
+        <a href="customizer.html" class="hover:text-[#D97736] transition">Bikin Versimu</a>
+        <a href="reviews.html" class="text-[#D97736] transition">Ulasan</a>
+      </nav>
+      <button onclick="toggleCart()" class="relative bg-white border border-[#EFE5D8] hover:border-[#D97736] p-3 rounded-full shadow-sm transition flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#2C221E]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+        <span id="cartCount" class="absolute -top-1 -right-1 bg-[#D97736] text-white font-extrabold text-[10px] w-5 h-5 rounded-full flex items-center justify-center scale-0 transition-transform duration-300">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- REVIEWS SECTION -->
+ <section class="max-w-7xl mx-auto px-6 py-20">
+  <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+    <h2 class="font-serif text-3xl font-bold text-[#2C221E]">
+      Kata Mereka yang Telah Mencicipi
+    </h2>
+    <p class="text-[#6B5B52] text-sm">
+      Ulasan jujur dari pelanggan setia kami.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Ulasan 1 -->
+    <div class="bg-white p-8 rounded-3xl border border-[#EFE5D8] space-y-4 shadow-sm">
+      <h3 class="font-serif text-lg font-bold text-[#2C221E]">
+        Classic New York
+      </h3>
+      <div class="text-[#D97736] font-bold text-lg">★★★★★</div>
+      <p class="text-sm text-[#6B5B52] leading-relaxed">
+        "Teksturnya bener-bener lumer di mulut terus manisnya juga pas,
+        gk bikin enek sama sekali"
+      </p>
+      <div class="font-bold text-sm text-[#2C221E] pt-2 border-t border-[#FAF7F2]">
+        Muhamad Apking
+      </div>
+    </div>
+
+    <!-- Ulasan 2 -->
+    <div class="bg-white p-8 rounded-3xl border border-[#EFE5D8] space-y-4 shadow-sm">
+      <h3 class="font-serif text-lg font-bold text-[#2C221E]">
+        Ruby Strawberry
+      </h3>
+      <div class="text-[#D97736] font-bold text-lg">★★★★★</div>
+      <p class="text-sm text-[#6B5B52] leading-relaxed">
+        "Pengirimannya aman, kuenya masih utuh dingin pas udh nyampe.
+        Selai strawberry di atasnya seger, gokill"
+      </p>
+      <div class="font-bold text-sm text-[#2C221E] pt-2 border-t border-[#FAF7F2]">
+        Purwanto
+      </div>
+    </div>
+
+    <!-- Ulasan 3 -->
+    <div class="bg-white p-8 rounded-3xl border border-[#EFE5D8] space-y-4 shadow-sm">
+      <h3 class="font-serif text-lg font-bold text-[#2C221E]">
+        Belgian Chocolate
+      </h3>
+      <div class="text-[#D97736] font-bold text-lg">★★★★★</div>
+      <p class="text-sm text-[#6B5B52] leading-relaxed">
+        "Recommended bnget bwat acara ulang tahun/hantaran.
+        Tampilan kotaknya mewah trs rasanya bintang lima. mantap guys"
+      </p>
+      <div class="font-bold text-sm text-[#2C221E] pt-2 border-t border-[#FAF7F2]">
+        Muhammad Agus
+      </div>
+    </div>
+
+  </div>
+</section>
